@@ -4,6 +4,11 @@ This wrapper uses x11 or xwayland due to openJDK missing support. Filesystem vis
 
 Any suggestions, problem reports or improvement proposals are welcome.
 
+## Limitations
+
+This Flatpak manifest downloads and unpacks Android Studio at build time, not install time, so it can only be used for local builds.
+Uploading this version to Flathub would probably violate Android Studio terms and conditions.
+
 ## Android Udev rules
 Many systems need UDEV rules to handle USB devices, we suggest these [android-udev-rules](https://github.com/M0Rf30/android-udev-rules) 
 
