@@ -17,8 +17,8 @@
         <content_attribute id="social-info">moderate</content_attribute>
     </content_rating>
     <branding>
-        <color scheme_preference="light" type="primary">#ffffff</color>
-        <color scheme_preference="dark" type="primary">#121212</color>
+        <color scheme_preference="light" type="primary">#d2e3fc</color>
+        <color scheme_preference="dark" type="primary">#132137</color>
     </branding>
     <categories>
         <category>Development</category>
@@ -49,43 +49,35 @@
     </supports>
     <screenshots>
         <screenshot type="default">
-            <image>https://developer.android.com/static/images/studio/studio-hero.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/studio-hero.png</image>
             <caption>Android Studio Showing the structure of a project</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/studio/videos/home/gemini-intro-poster.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/gemini-intro-poster.png</image>
             <caption>Try Gemini in Android Studio</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/images/studio/studio-idx_dt.png</image>
-            <caption>Android Studio in your web browser</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://developer.android.com/studio/videos/home/compose-animation-preview-poster.png</image>
-            <caption>Compose design tools</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://developer.android.com/studio/videos/home/studio-compose-editor-poster.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/studio-compose-editor-poster.png</image>
             <caption>Intelligent code editor</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/images/studio/flexible-build-system.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/flexible-build-system.png</image>
             <caption>Flexible build system</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/studio/videos/home/emulator-foldable-device-poster.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/emulator-foldable-device-poster.png</image>
             <caption>Easily emulate any device</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/images/studio/apk-bundle-analyzer.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/apk-bundle-analyzer.png</image>
             <caption>Android App Bundle</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/studio/images/project-android-view.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/project-android-view.png</image>
             <caption>Project files in Android project view</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/studio/images/lint-inspection-results.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/lint-inspection-results.png</image>
             <caption>The results of a lint inspection in Android Studio</caption>
         </screenshot>
     </screenshots>
@@ -105,6 +97,16 @@
     </description>
     <releases>
         <!-- stable releases -->
+        <release date="2024-12-02" version="2024.2.1.12">
+            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2024.2.1#android-studio-ladybug-|-2024.2.1-patch-3</url>
+            <description>
+                <p>Android Studio Ladybug | 2024.2.1 Patch 3</p>
+                <ul>
+                    <li>FIXED: Many missing analysis API method warnings when running lint</li>
+                    <li>FIXED: False positive lint check android.permission.SCHEDULE_EXACT_ALARM is only granted to system apps</li>
+                </ul>
+            </description>
+        </release>
         <release date="2024-10-31" version="2024.2.1.11">
             <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2024.2.1#android-studio-ladybug-|-2024.2.1-patch-2</url>
             <description>
@@ -153,22 +155,6 @@
                     <li>FIXED: R8 8.5.x StackOverflowError in SimpleInliningConstraintAnalysis</li>
                     <li>FIXED: Task :xxxx:minifyXXXReleaseWithR8 ERROR: R8: java.util.ConcurrentModificationException</li>
                     <li>FIXED: java.lang.NullPointerException: Cannot invoke "com.android.tools.r8.ir.analysis.type.TypeElement.asClassType()"</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2024-08-29" version="2024.1.2.12">
-            <url type="details">https://developer.android.com/studio/releases/past-releases/as-koala-feature-drop-release-notes</url>
-            <description>
-                <p>Android Studio Koala Feature Drop | 2024.1.2</p>
-                <ul>
-                    <li>Android Device Streaming: more devices and improved sign-up</li>
-                    <li>USB cable speed detection</li>
-                    <li>Updated sign in flow to Google services</li>
-                    <li>Device UI setting shortcuts</li>
-                    <li>Faster and improved Profiler with a task-centric approach</li>
-                    <li>Wear OS tiles preview panel</li>
-                    <li>Compose Glance widget previews</li>
-                    <li>Live Edit for Compose enabled by default and new shortcut</li>
                 </ul>
             </description>
         </release>

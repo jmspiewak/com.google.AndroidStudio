@@ -15,18 +15,17 @@
     "--allow=multiarch",
     "--env=JAVA_HOME=/app/extra/android-studio/jbr",
     "--talk-name=org.freedesktop.Notifications",
-    "--talk-name=org.freedesktop.secrets",
-    "--talk-name=com.canonical.AppMenu.Registrar"
+    "--talk-name=org.freedesktop.secrets"
   ],
   "modules": [
     {
       "name": "android-studio",
       "buildsystem": "simple",
       "build-commands": [
-        "tar xzf android-studio.tar.gz -C /app/",
-        "install -Dm644 com.google.AndroidStudio.svg /app/share/icons/hicolor/scalable/apps/com.google.AndroidStudio.svg",
-        "install -Dm644 com.google.AndroidStudio.metainfo.xml /app/share/metainfo/com.google.AndroidStudio.metainfo.xml",
-        "install -Dm644 com.google.AndroidStudio.desktop /app/share/applications/com.google.AndroidStudio.desktop"
+        "tar xzf android-studio.tar.gz -C ${FLATPAK_DEST}/",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop"
       ],
       "sources": [
         {
@@ -47,8 +46,8 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://dl.google.com/dl/android/studio/ide-zips/2024.2.1.11/android-studio-2024.2.1.11-linux.tar.gz",
-          "sha256": "81f2fa5da72ab6f6afacca4a5327de5191e133ad02706e3ee440dc8658b8cdc3"
+          "url": "https://dl.google.com/dl/android/studio/ide-zips/2024.2.1.12/android-studio-2024.2.1.12-linux.tar.gz",
+          "sha256": "4df51ac7d73e45203383418a537c9562c58bef6ab80d4074cd98acb387e5caa6"
         }
       ]
     },
@@ -57,12 +56,19 @@
       "buildsystem": "meson",
       "config-opts": [
         "-Deditor_binary=/app/android-studio/bin/studio",
-        "-Dprogram_name=android-studio-wrapper"
+        "-Dprogram_name=android-studio-wrapper",
+        "-Deditor_title=Android Studio",
+        "-Dfirst_run_template=README.md",
+        "-Dflagfile_prefix=flatpak-studio"
       ],
       "sources": [
         {
           "type": "dir",
           "path": "ide-flatpak-wrapper"
+        },
+        {
+          "type": "file",
+          "path": "README.md"
         }
       ]
     },
