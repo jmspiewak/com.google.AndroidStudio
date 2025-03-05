@@ -97,6 +97,66 @@
     </description>
     <releases>
         <!-- stable releases -->
+        <release date="2025-03-04" version="2024.3.1.13">
+            <url type="details">https://developer.android.com/studio/releases</url>
+            <description>
+                <p>Android Studio Meerkat | 2024.3.1</p>
+                <ul>
+                    <li>Compose Preview enhancements</li>
+                    <li>KMP Shared Module integration with Android applications</li>
+                    <li>Updated UX for adding virtual and remote devices to Device Manager</li>
+                    <li>New Gemini in Android Studio features</li>
+                    <li>Updated Build menu and actions</li>
+                    <li>Google Play SDK Insights: Deprecated SDK warnings</li>
+                </ul>
+            </description>
+        </release>
+        <release date="2025-02-26" version="2024.2.2.15">
+            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2024.2.2#android-studio-ladybug-feature-drop-|-2024.2.2-patch-2</url>
+            <description>
+                <p>Android Studio Ladybug Feature Drop | 2024.2.2 Patch 2</p>
+                <ul>
+                    <li>FIXED: Initialization script 'C:\Users\mypc\AppData\Local\Temp\ijresolvers2.gradle' line: 162</li>
+                    <li>FIXED: Android Studio not deploying changes to app</li>
+                    <li>FIXED: Gson proguard is not working properly after upgrading to AGP 8.8</li>
+                    <li>FIXED: java.lang.VerifyError: Verifier rejected class</li>
+                    <li>FIXED: Leanback crashes when minified with R8 included in AGP 8.10.0-alpha04</li>
+                </ul>
+            </description>
+        </release>
+        <release date="2025-02-13" version="2024.2.2.14">
+            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2024.2.2#android-studio-ladybug-feature-drop-|-2024.2.2-patch-1</url>
+            <description>
+                <p>Android Studio Ladybug Feature Drop | 2024.2.2 Patch 1</p>
+                <ul>
+                    <li>FIXED: When running project, AS does not rebuild project anymore resulting in "Error loading build artifacts"</li>
+                    <li>FIXED: Android Studio not deploying changes to app</li>
+                    <li>FIXED: Add OpenJDK 23 for testing</li>
+                    <li>FIXED: Android studio got slow after updating</li>
+                    <li>FIXED: Cannot run unit tests.</li>
+                    <li>FIXED: java.lang.AbstractMethodError: Receiver class [...]$$Lambda$[...] does not define or inherit an implementation of the resolved method [...] of interface [...]</li>
+                    <li>FIXED: NPE in Enqueuer releated to record DexCallSite</li>
+                    <li>FIXED: R8 8.7.18 causes a runtime null pointer exception when calling job?.cancel</li>
+                    <li>FIXED: java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/LazyThreadSafetyMode</li>
+                    <li>FIXED: Monzo appears to be using excessive amount of time in tree shaking</li>
+                    <li>FIXED: AGP 8.8 fail release build : R8: java.lang.NullPointerException: Cannot read field "b" because the return value of "com.android.tools.r8.internal.BS.a(com.android.tools.r8.internal.cR)" is null`</li>
+                </ul>
+            </description>
+        </release>
+        <release date="2025-01-09" version="2024.2.2.13">
+            <url type="details">https://developer.android.com/studio/releases/past-releases/as-ladybug-feature-drop-release-notes</url>
+            <description>
+                <p>Android Studio Ladybug Feature Drop | 2024.2.2</p>
+                <ul>
+                    <li>Wear Tiles Animation Preview</li>
+                    <li>Motion Editor deprecation</li>
+                    <li>New Gemini in Android Studio features</li>
+                    <li>Google Play SDK Index integration</li>
+                    <li>Mock sensor capabilities and values</li>
+                    <li>App Links Assistant: JSON generation and web issue fixes</li>
+                </ul>
+            </description>
+        </release>
         <release date="2024-12-02" version="2024.2.1.12">
             <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2024.2.1#android-studio-ladybug-|-2024.2.1-patch-3</url>
             <description>
@@ -104,57 +164,6 @@
                 <ul>
                     <li>FIXED: Many missing analysis API method warnings when running lint</li>
                     <li>FIXED: False positive lint check android.permission.SCHEDULE_EXACT_ALARM is only granted to system apps</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2024-10-31" version="2024.2.1.11">
-            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2024.2.1#android-studio-ladybug-|-2024.2.1-patch-2</url>
-            <description>
-                <p>Android Studio Ladybug | 2024.2.1 Patch 2</p>
-                <ul>
-                    <li>FIXED: AGP 8.7.0 - Lint False Positive RestrictedApi on NavOptionsBuilder.popUpTo</li>
-                    <li>FIXED: [R8 8.6.27] Method implementation replaced with `throw null`</li>
-                    <li>FIXED: Default android proguard files throw a warning when used with current Version of R8</li>
-                    <li>FIXED: MissingStartupProfileItemsDiagnostic crashes the Gradle client with an out-of-memory error if the message is too large</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2024-10-14" version="2024.2.1.10">
-            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2024.2.1#android-studio-ladybug-|-2024.2.1-patch-1</url>
-            <description>
-                <p>Android Studio Ladybug | 2024.2.1 Patch 1</p>
-                <ul>
-                    <li>FIXED: agp docs have a lot of TBD</li>
-                    <li>FIXED: Links from Android SDK Upgrade Assistant point to internal Google documentation</li>
-                    <li>FIXED: Cannot open Android studio: Missing essential plugins</li>
-                    <li>FIXED: AGP 8.6.1: Regression - WrongConstant lint failure when using [Int].toLong() inside a @LongDef in Kotlin</li>
-                    <li>FIXED: "At least one host must be specified" lint error when setting http or https intent-filter scheme</li>
-                    <li>FIXED: java.lang.NoClassDefFoundError when running tests using JUnit</li>
-                    <li>FIXED: Run configuration for unit tests is not properly updated</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2024-10-01" version="2024.2.1.9">
-            <url type="details">https://developer.android.com/studio/releases</url>
-            <description>
-                <p>Android Studio Ladybug | 2024.2.1</p>
-                <ul>
-                    <li>IntelliJ 2024.2 platform updates</li>
-                    <li>Support for Pixel 9 series devices</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2024-09-17" version="2024.1.2.13">
-            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2024.1.2#android-studio-koala-feature-drop-|-2024.1.2-patch-1</url>
-            <description>
-                <p>Android Studio Koala Feature Drop | 2024.1.2 Patch 1</p>
-                <ul>
-                    <li>FIXED: Dexing task/transform generates non-deterministic classes.dex contents</li>
-                    <li>FIXED: R8 regression from 8.4.2 to 8.5.0</li>
-                    <li>FIXED: Cannot close Koala when updating indices (which takes forever)</li>
-                    <li>FIXED: R8 8.5.x StackOverflowError in SimpleInliningConstraintAnalysis</li>
-                    <li>FIXED: Task :xxxx:minifyXXXReleaseWithR8 ERROR: R8: java.util.ConcurrentModificationException</li>
-                    <li>FIXED: java.lang.NullPointerException: Cannot invoke "com.android.tools.r8.ir.analysis.type.TypeElement.asClassType()"</li>
                 </ul>
             </description>
         </release>
